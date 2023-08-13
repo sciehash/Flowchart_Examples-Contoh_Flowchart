@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-09 03:02:51 PM"/>
+        <attribute name="created" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0wOTswMjoyNzoyMSBQTTsyMDE4"/>
+        <attribute name="edited" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0wOTswMzowMjo1MSBQTTsxOzIxMjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angkainput, ribuan, ratusan, puluhan, satuan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan angka yang lebih besar dari 1000 dan tidak lebih dari 10000: &quot;" newline="True"/>
+            <input variable="angkainput"/>
+            <assign variable="ribuan" expression="angkainput / 1000"/>
+            <assign variable="ratusan" expression="(angkainput mod 1000) / 100"/>
+            <assign variable="puluhan" expression="ratusan mod 10"/>
+            <assign variable="satuan" expression="puluhan mod 10"/>
+            <output expression="&quot;Jadi tempat bilangan yang tepat adalah sebagai berikut: &quot;" newline="True"/>
+            <output expression="&quot;Ribuan: &quot;&amp;ribuan" newline="True"/>
+            <output expression="&quot;Ratusan: &quot;&amp;ratusan" newline="True"/>
+            <output expression="&quot;Puluhan: &quot;&amp;puluhan" newline="True"/>
+            <output expression="&quot;Satuan: &quot;&amp;satuan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

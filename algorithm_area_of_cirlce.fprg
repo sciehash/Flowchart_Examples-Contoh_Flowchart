@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-26 08:10:12 PM"/>
+        <attribute name="created" value="SFA7U0NJRUhBU0g7MjAyMy0wNy0yNjswNzo1NDo0MCBQTTsyMDIy"/>
+        <attribute name="edited" value="SFA7U0NJRUhBU0g7MjAyMy0wNy0yNjswODoxMDoxMiBQTTsxOzIxMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="phi" type="Integer" array="False" size=""/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <declare name="areaofcircle" type="String" array="False" size=""/>
+            <read variable="phi"/>
+            <input variable="r"/>
+            <assign variable="areaofcircle" expression="phi*r*r"/>
+            <output expression="areaofcircle" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

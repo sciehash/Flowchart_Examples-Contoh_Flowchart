@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-13 04:40:45 PM"/>
+        <attribute name="created" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0xMzswNDoyNzo0MCBQTTsyMDE2"/>
+        <attribute name="edited" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0xMzswNDo0MDo0NSBQTTsxOzIxMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numinput" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ketik angka apapun sesuka hati anda, lalu tekan tombol Enter :&quot;" newline="True"/>
+            <input variable="numinput"/>
+            <if expression="numinput mod 2 = 0">
+                <then>
+                    <output expression="&quot;Angka yang anda ketikkan adalah angka genap.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Angka yang anda ketikkan adalah angka ganjil.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
