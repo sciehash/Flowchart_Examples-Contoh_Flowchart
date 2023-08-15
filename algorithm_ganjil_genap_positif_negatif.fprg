@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-15 11:15:11 AM"/>
+        <attribute name="created" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0xMzswNDoyNzo0MCBQTTsyMDE2"/>
+        <attribute name="edited" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0xNTsxMToxNToxMSBBTTs1OzIxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilihmenu" type="String" array="False" size=""/>
+            <declare name="numinput" type="Integer" array="False" size=""/>
+            <output expression="&quot;Pilih menu (ketik yang sesuai):&quot;" newline="True"/>
+            <output expression="&quot;cari ganjil/genap&quot;" newline="True"/>
+            <output expression="&quot;cari positif/negatif&quot;" newline="True"/>
+            <input variable="pilihmenu"/>
+            <if expression="pilihmenu = &quot;cari ganjil/genap&quot;">
+                <then>
+                    <output expression="&quot;Masukkan angka sesuai keinginan anda: &quot;" newline="True"/>
+                    <input variable="numinput"/>
+                    <if expression="numinput mod 2 = 0">
+                        <then>
+                            <output expression="&quot;Bilangan yang anda masukkan adalah bilangan genap&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Bilangan yang anda masukkan adalah bilangan ganjil.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="pilihmenu = &quot;cari positif/negatif&quot;">
+                        <then>
+                            <output expression="&quot;Masukkan angka seuai keinginan anda: &quot;" newline="True"/>
+                            <input variable="numinput"/>
+                            <if expression="numinput &gt; 0">
+                                <then>
+                                    <output expression="&quot;Angka yang anda masukkan adalah angka positif&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="numinput = 0">
+                                        <then>
+                                            <output expression="&quot;0 bukan angka positif juga bukan angka negatif.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Angka yang anda masukkan adalah angka negatif&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Input anda tidak valid. Silahkan coba lagi.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
