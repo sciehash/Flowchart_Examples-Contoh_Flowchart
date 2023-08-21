@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-21 08:13:30 PM"/>
+        <attribute name="created" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0yMTswNzowNzo1NSBQTTsyMDIy"/>
+        <attribute name="edited" value="SFA7U0NJRUhBU0g7MjAyMy0wOC0yMTswODoxMzozMCBQTTs5OzIxMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ptunjangana, totallembur, totalgaji, userinputjamlembur, jumlahis, userinputgolongan, userinputgol" type="Integer" array="False" size=""/>
+            <declare name="uinputptunjangan, uinputlemburyn, ptunjanganis" type="String" array="False" size=""/>
+            <output expression="&quot;Aplikasi penghitung gaji bulanan.&quot;" newline="True"/>
+            <output expression="&quot;Pilih menu sesuai jabatan anda (ketik nomor): &quot;" newline="True"/>
+            <output expression="&quot;1 - Golongan 1, 2 - Golongan 2, 3 - Golongan 3, 4 - Golongan 4&quot;" newline="True"/>
+            <input variable="userinputgolongan"/>
+            <if expression="userinputgolongan = 1">
+                <then>
+                    <assign variable="userinputgol" expression="2500000"/>
+                </then>
+                <else>
+                    <if expression="userinputgolongan = 2">
+                        <then>
+                            <assign variable="userinputgol" expression="3500000"/>
+                        </then>
+                        <else>
+                            <if expression="userinputgolongan = 3">
+                                <then>
+                                    <assign variable="userinputgol" expression="4500000"/>
+                                </then>
+                                <else>
+                                    <if expression="userinputgolongan = 4">
+                                        <then>
+                                            <assign variable="userinputgol" expression="5500000"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Input anda tidak valid, silahkan coba lagi.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Masukkan jumlah anak anda:  &quot;" newline="True"/>
+            <input variable="ptunjangana"/>
+            <if expression="ptunjangana &gt; 3">
+                <then>
+                    <assign variable="ptunjangana" expression="3"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Apakah anda sudah menikah? Ya/Tidak&quot;" newline="True"/>
+            <input variable="ptunjanganis"/>
+            <if expression="ptunjanganis = &quot;Ya&quot;">
+                <then>
+                    <assign variable="jumlahis" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="jumlahis" expression="0"/>
+                </else>
+            </if>
+            <output expression="&quot;Apakah anda bekerja lembur bulan ini? Ya/Tidak&quot;" newline="True"/>
+            <input variable="uinputlemburyn"/>
+            <if expression="uinputlemburyn = &quot;Ya&quot;">
+                <then>
+                    <output expression="&quot;Berapa jam anda lembur? (Masukkan angka bulat) &quot;" newline="True"/>
+                    <input variable="userinputjamlembur"/>
+                    <if expression="userinputjamlembur &lt; 5">
+                        <then>
+                            <assign variable="totallembur" expression="userinputjamlembur * 20000"/>
+                        </then>
+                        <else>
+                            <assign variable="totallembur" expression="userinputjamlembur * 30000"/>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <assign variable="totalgaji" expression="userinputgol + ((userinputgol * 0.025)*ptunjangana) + ((userinputgol * 0.05)*jumlahis) + totallembur"/>
+            <output expression="&quot;Total gaji anda bulan ini adalah: Rp.  &quot;&amp;totalgaji" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

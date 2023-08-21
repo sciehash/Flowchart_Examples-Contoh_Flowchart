@@ -1,0 +1,148 @@
+﻿[Main]
+Name    = A bit darkerl
+Author  = Sciehash
+About   = This is the default color scheme with gentle colors.
+Date    = 2023-08-21 20:12:55
+Version = 2.22
+
+[Line]
+Fill   = FF8040
+Border = 404040
+
+[Page]
+Fill   = 2C2C2C
+Border = 404040
+Text   = 000000
+
+[Breakpoint]
+Fill   = FFA0A0
+Border = A04C4C
+Text   = 000000
+
+[Comment]
+Fill   = FFFFFF
+Border = 606060
+Text   = 606060
+
+[Input]
+Fill   = C0E0FF
+Border = 6080A0
+Text   = 000000
+
+[Output]
+Fill   = D0FFD0
+Border = 70A070
+Text   = 000000
+
+[Declare]
+Fill   = FFFFD0
+Border = A0A070
+Text   = 000000
+
+[Assign]
+Fill   = FFFFD0
+Border = A0A070
+Text   = 000000
+
+[Terminator]
+Fill   = F0E0FF
+Border = 9070A0
+Text   = 000000
+
+[Call]
+Fill   = F0E0FF
+Border = 9070A0
+Text   = 000000
+
+[If]
+Fill   = FFD0D0
+Border = A07070
+Text   = 000000
+
+[Loop]
+Fill   = FFE0A0
+Border = A08040
+Text   = 000000
+
+[Incomplete]
+Fill   = E0E0E0
+Border = 505050
+Text   = 000000
+
+[Error]
+Fill   = C04040
+Border = 602020
+Text   = FFFFFF
+
+[Selected]
+Fill   = 2080D0
+Border = 104070
+Text   = FFFFFF
+
+[Executing]
+Fill   = 00A080
+Border = 005040
+Text   = FFFFFF
+
+[Window]
+Fill   = 0050A0
+Border = 003080
+Text   = FFFFFF
+
+[Header]
+Fill   = B0D0FF
+Border = 5070A0
+Text   = 000000
+
+[Hover]
+Fill   = D0E8FF
+Border = 70A8E0
+Text   = 000000
+
+[Integer]
+Fill   = 4060C0
+Border = 002060
+Text   = FFFFFF
+
+[Real]
+Fill   = 804080
+Border = 402040
+Text   = FFFFFF
+
+[String]
+Fill   = A04040
+Border = 600000
+Text   = FFFFFF
+
+[Boolean]
+Fill   = 408080
+Border = 004040
+Text   = FFFFFF
+
+[Value]
+Fill = FFFFFF
+Text = 000000
+
+[Subscript]
+Fill = E0E0E0
+Text = 000000
+
+[Control]
+Fill   = E4F0FC
+Border = 90B0E0
+Text   = 000000
+
+[Field]
+Fill   = 2A2A2A
+Border = 808080
+Text   = 000000
+
+[Active]
+Fill   = B0D0FF
+Border = 7090C0
+Text   = 000000
+
+[menu]
+Fill   = ADD8E6
+Border = 808080
+Text   = 000000
